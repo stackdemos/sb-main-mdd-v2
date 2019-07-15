@@ -1,0 +1,50 @@
+parameters:
+  - name: application.description
+    value: Java microservice with Spring Boot
+  - name: application.ingress
+    value: sb-main-mdd-v2.app.mainstack.demo10.superhub.io
+  - name: application.name
+    value: sb-main-mdd-v2
+  - name: application.namespace
+    value: applications
+  - name: application.path
+    value: /
+  - name: application.replicas
+    value: '1'
+  - name: component.dex.okta.appId
+    value: 0oa4el565sTkluYBJ2p7
+  - name: component.dex.okta.clientId
+    value: 0oa4el565sTkluYBJ2p7
+  - name: component.dex.okta.issuer
+    value: 'https://agilestacks.okta.com'
+  - name: component.docker.auth.basic.username
+    value: admin
+  - name: component.docker.auth.host
+    value: mainstack-harbor.app.mainstack.demo10.superhub.io
+  - name: component.docker.registry.image
+    value: mainstack-harbor.app.mainstack.demo10.superhub.io/library/sb-main-mdd-v2
+  - name: component.docker.registry.kind
+    value: harbor
+  - name: component.docker.registry.url
+    value: mainstack-harbor.app.mainstack.demo10.superhub.io/library
+  - name: component.github.repository.name
+    value: sb-main-mdd-v2
+  - name: component.github.repository.organization
+    value: stackdemos
+outputs:
+  - name: application.description
+  - name: application.ingress
+  - name: application.name
+  - name: application.namespace
+  - name: application.path
+  - name: application.replicas
+  - name: component.dex.okta.appId
+  - name: component.dex.okta.clientId
+  - name: component.dex.okta.issuer
+  - name: component.docker.auth.basic.username
+  - name: component.docker.auth.host
+  - name: component.docker.registry.image
+  - name: component.docker.registry.kind
+  - name: component.docker.registry.url
+  - name: component.github.repository.name
+  - name: component.github.repository.organization
